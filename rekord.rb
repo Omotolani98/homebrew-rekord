@@ -10,7 +10,7 @@ class Rekord < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d6db646b41aff8c53ddb55d1f0ce43b7665af078c83511c99166674070c27695"
+      sha256 "9dbdbdf61b92ad165dc19be4442cc814959c63a41b34fc0ff0e9c92fa7284e3d"
 
       define_method(:install) do
         bin.install "rekord"
@@ -19,7 +19,7 @@ class Rekord < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_darwin_arm64.tar.gz"
-      sha256 "bf29160eebd81498b667185a32fca458b99243a98eb5ea150b6114cda43e0c6d"
+      sha256 "a34c16ba0c8094472a57c07e5fd34b75d1122cae8639782009c07c395a5a5895"
 
       define_method(:install) do
         bin.install "rekord"
@@ -31,7 +31,7 @@ class Rekord < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_linux_amd64.tar.gz"
-      sha256 "0c76d91416dbba5a1eb04a40c95a2cbee9c713bdcb56e3ad2b23987bc42d3b0c"
+      sha256 "cec52eef02deae609241cd9b156c1ef61c9e96bd12e59a05fbeb6d01d0d8eb79"
       define_method(:install) do
         bin.install "rekord"
         bin.install "rk"
@@ -39,7 +39,7 @@ class Rekord < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_linux_arm64.tar.gz"
-      sha256 "941c90a13ac54ef4550f0d4d3c8129382ca151c9e7c0fd7bb83e995159cc507b"
+      sha256 "4c55ba51b0390b739a751127d500192feb23bdc0d3dc89c2fbeea58006ddf991"
       define_method(:install) do
         bin.install "rekord"
         bin.install "rk"
