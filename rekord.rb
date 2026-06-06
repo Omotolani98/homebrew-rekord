@@ -5,12 +5,12 @@
 class Rekord < Formula
   desc "Record terminal workflows as structured session data"
   homepage "https://github.com/Omotolani98/rekord"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_darwin_amd64.tar.gz"
-      sha256 "9dbdbdf61b92ad165dc19be4442cc814959c63a41b34fc0ff0e9c92fa7284e3d"
+      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.1/rekord_0.3.1_darwin_amd64.tar.gz"
+      sha256 "dfdf4d9f7ea10bc7671550f31e822beb700f380877c917c477a0a6f507e0663a"
 
       define_method(:install) do
         bin.install "rekord"
@@ -18,8 +18,8 @@ class Rekord < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_darwin_arm64.tar.gz"
-      sha256 "a34c16ba0c8094472a57c07e5fd34b75d1122cae8639782009c07c395a5a5895"
+      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.1/rekord_0.3.1_darwin_arm64.tar.gz"
+      sha256 "778c920b498cc6639e03b5d7f467f8c1ee9560a540044276fcb737dff6a30278"
 
       define_method(:install) do
         bin.install "rekord"
@@ -30,16 +30,16 @@ class Rekord < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_linux_amd64.tar.gz"
-      sha256 "cec52eef02deae609241cd9b156c1ef61c9e96bd12e59a05fbeb6d01d0d8eb79"
+      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.1/rekord_0.3.1_linux_amd64.tar.gz"
+      sha256 "9a5501d0e3bb001fdff781c73960bb1555163cdeed2d0bec6c14aa3972c2ebb2"
       define_method(:install) do
         bin.install "rekord"
         bin.install "rk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.0/rekord_0.3.0_linux_arm64.tar.gz"
-      sha256 "4c55ba51b0390b739a751127d500192feb23bdc0d3dc89c2fbeea58006ddf991"
+      url "https://github.com/Omotolani98/rekord/releases/download/v0.3.1/rekord_0.3.1_linux_arm64.tar.gz"
+      sha256 "756a0eb1695ba3e0b4b66baaf894c7d3f4520f2dfae80982dbb01a47285f6b95"
       define_method(:install) do
         bin.install "rekord"
         bin.install "rk"
